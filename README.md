@@ -53,3 +53,4 @@ Engineered a clocked SR Latch to analyze dynamic logic gate behavior and state r
 2. Ensure **LTSpice** is installed.
 3. Verify that the 180nm technology library text file is located in your working directory or correctly linked in the `.asc` schematic files.
 4. Open any `.asc` file (e.g., `CMOS Inverter.asc`) in LTSpice and click **Run**.
+5. Full Documentation of results are done in 'dvd lab record.docx'
