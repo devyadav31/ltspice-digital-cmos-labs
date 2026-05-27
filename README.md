@@ -14,7 +14,7 @@ All simulations were performed using **LTSpice** to validate theoretical concept
 
 ### 1. Standard CMOS & Pseudo-NMOS Inverters
 * **CMOS:** Established the baseline performance for noise margins, symmetric rising/falling delays, and zero static power dissipation.
-* **Pseudo-NMOS (`DVD_8.asc`):** Evaluated the trade-offs of ratioed logic. Analyzed the static power dissipation inherent when the pull-down network is active and the reduction in input capacitance compared to standard CMOS.
+* **Pseudo-NMOS (`CMOS_inverter.asc`):** Evaluated the trade-offs of ratioed logic. Analyzed the static power dissipation inherent when the pull-down network is active and the reduction in input capacitance compared to standard CMOS.
 
 ### 2. Advanced Topologies: DCVSL & TGL
 * **Differential Cascode Voltage Switch Logic (DCVSL):** Designed and simulated differential logic structures to observe improvements in propagation delay and logic density at the cost of routing complexity.
@@ -25,14 +25,18 @@ All simulations were performed using **LTSpice** to validate theoretical concept
 ### Voltage Transfer Characteristics (VTC)
 DC sweeps were performed to extract the switching threshold voltages ($V_{M}$) and calculate the High/Low Noise Margins ($NM_{H}$, $NM_{L}$) for the implemented logic gates.
 
-*(Replace this line with your VTC waveform image)*
-`![VTC Waveform](./waveforms/VTC_Analysis.png)`
+<img width="975" height="501" alt="image" src="https://github.com/user-attachments/assets/f9b897ae-7911-4671-ba14-9c0aa0109c75" />
+
 
 ### Propagation Delay & Transient Analysis
 Transient simulations were executed to measure $t_{pHL}$ and $t_{pLH}$, allowing for the calculation of the overall propagation delay and the observation of dynamic power consumption during switching events.
 
-*(Replace this line with your transient delay image)*
-`![Transient Analysis](./waveforms/Transient_Delay.png)`
+<img width="914" height="350" alt="image" src="https://github.com/user-attachments/assets/eddf2a92-a096-4e07-917a-cc6474d78bee" />
+<img width="850" height="315" alt="image" src="https://github.com/user-attachments/assets/90ec4695-25b4-455c-b70f-b4dcc1ad2d63" />
+<img width="519" height="334" alt="image" src="https://github.com/user-attachments/assets/36efa0c4-5297-4c1f-9ac3-1dd1ecc774f2" />
+
+
+
 
 ## Advanced Implementation: 8-Transistor Clocked SR Latch
 **File:** `dvd_9.asc`
@@ -41,8 +45,8 @@ Engineered a clocked SR Latch to analyze dynamic logic gate behavior and state r
 * **Design Challenge:** Addressed charge leakage at the dynamic storage node during the evaluate phase.
 * **Solution:** Successfully mitigated leakage and stabilized the logic levels by implementing bleeder transistors, ensuring reliable state retention even at lower switching frequencies.
 
-*(Replace this line with your SR Latch waveform image)*
-`![SR Latch Waveform](./waveforms/SR_Latch_Bleeder.png)`
+<img width="1090" height="711" alt="image" src="https://github.com/user-attachments/assets/2c4b2147-eefc-49be-8e46-19c028b0f112" />
+
 
 ## How to Run the Simulations
 1. Clone this repository to your local machine.
