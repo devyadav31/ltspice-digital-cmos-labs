@@ -39,7 +39,7 @@ Transient simulations were executed to measure $t_{pHL}$ and $t_{pLH}$, allowing
 
 
 ## Advanced Implementation: 8-Transistor Clocked SR Latch
-**File:** `dvd_9.asc`
+**File:** `dvd_12.asc`
 
 Engineered a clocked SR Latch to analyze dynamic logic gate behavior and state retention. 
 * **Design Challenge:** Addressed charge leakage at the dynamic storage node during the evaluate phase.
